@@ -373,3 +373,85 @@ $font-stack:     system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Robot
         }
     }
 }
+
+@media (max-width: 768px) {
+        .home-page {
+            padding: 2rem 1rem;
+            gap: 1.5rem;
+        }
+
+        .interview-card__body {
+            flex-direction: column;
+        }
+
+        .panel-divider {
+            width: auto;
+            height: 1px;
+        }
+
+        .panel {
+            padding: 1.25rem;
+        }
+
+        .panel__textarea:not(.panel__textarea--short) {
+            min-height: 220px;
+        }
+
+        .interview-card__footer {
+            align-items: stretch;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .generate-btn {
+            justify-content: center;
+        }
+    }
+
+@media (max-width: 480px) {
+        .home-page {
+            padding: 1.5rem 0.75rem;
+            gap: 1.25rem;
+        }
+
+        .page-header h1 {
+            font-size: 1.75rem;
+        }
+
+        .page-header p {
+            font-size: 0.875rem;
+        }
+
+        .interview-card,
+        .recent-reports {
+            width: 100%;
+        }
+
+        .panel {
+            padding: 1rem;
+        }
+
+        .panel__header {
+            flex-wrap: wrap;
+        }
+
+        .interview-card__footer {
+            padding: 1rem;
+        }
+
+        .generate-btn {
+            width: 100%;
+            padding-inline: 1rem;
+        }
+
+        .reports-list .report-item {
+            flex-basis: 100%;
+            min-width: 0;
+        }
+
+        .page-footer {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem 1rem;
+    }
+}

@@ -42,3 +42,19 @@ main{
         text-decoration: none;
     }
 }
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+
+    main .form-container {
+        width: 100%;
+        min-width: 0;
+    }
+
+    main .input-group input {
+        width: 100%;
+        min-width: 0;
+    }
+}
